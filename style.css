@@ -1,54 +1,90 @@
-/* style.css */
-body {
-    font-family: -apple-system, Arial, sans-serif;
+/* ===== RESET & BASE ===== */
+* {
+    box-sizing: border-box;
     margin: 0;
-    background: #f6fff9;
-    color: #003d1f;
+    padding: 0;
   }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(to bottom, #f1fff5, #e0f5ea);
+    color: #003d1f;
+    line-height: 1.6;
+  }
+  
+  /* ===== GLASSMORPHIC NAVBAR ===== */
   .navbar {
-    background: #007a4d;
-    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 122, 77, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 122, 77, 0.05);
   }
   .logo {
-    color: #ffffff;
-    font-weight: bold;
     font-size: 1.5rem;
+    font-weight: 600;
+    color: #007a4d;
   }
   .nav-links a {
-    color: white;
+    color: #003d1f;
     margin-left: 1.5rem;
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s;
   }
   .nav-links a:hover {
-    text-decoration: underline;
+    color: #00995e;
   }
-  .hero, .section {
+  
+  /* ===== HERO SECTION ===== */
+  .hero {
+    background: linear-gradient(to right, #ccf5e1, #e8fff1);
+    padding: 6rem 2rem;
+    text-align: center;
+    color: #006633;
+  }
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* ===== CONTENT SECTIONS ===== */
+  .section {
     padding: 4rem 2rem;
     max-width: 900px;
     margin: 0 auto;
   }
-  .hero {
-    background: #ccf5e1;
-    text-align: center;
-  }
-  .hero h1 {
-    font-size: 2.5rem;
+  .section h2 {
+    font-size: 2rem;
     margin-bottom: 1rem;
+    color: #005c36;
   }
+  .alt {
+    background: #e6fff0;
+  }
+  
+  /* ===== FOOTER ===== */
   footer {
-    background: #007a4d;
+    background: rgba(0, 122, 77, 0.9);
     color: white;
     text-align: center;
     padding: 2rem;
+    margin-top: 4rem;
   }
   footer a {
     color: #ccffcc;
     text-decoration: underline;
+  }
+  footer a:hover {
+    color: #ffffff;
   }
   
