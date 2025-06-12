@@ -1,0 +1,32 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0fff4;
+    color: #003300;
+    margin: 0;
+  }
+  header {
+    background: #00aa66;
+    padding: 1em;
+    text-align: center;
+    color: white;
+  }
+  nav {
+    background: #00995e;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .content {
+    padding: 2em;
+  }
+  
