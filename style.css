@@ -70,6 +70,40 @@
     margin: 0 auto;
   }
   
+  .about-block {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .about-block img {
+    flex: 1 1 300px;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 122, 77, 0.15);
+  }
+  
+  .about-block div {
+    flex: 1 1 300px;
+  }
+  
+  .about-block h3 {
+    font-size: 1.5rem;
+    color: #006633;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-block p {
+    font-size: 1rem;
+    color: #2a4735;
+  }
+  
+  .about-block.reverse {
+    flex-direction: row-reverse;
+  }
+  
   /* ===== CONTENT SECTIONS ===== */
   .section {
     padding: 4rem 2rem;
