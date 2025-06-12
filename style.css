@@ -70,6 +70,7 @@
     margin: 0 auto;
   }
   
+  /* ===== ABOUT BLOCKS ===== */
   .about-block {
     display: flex;
     align-items: center;
@@ -125,6 +126,23 @@
   
   .alt {
     background-color: #e6fff0;
+  }
+  
+  /* ===== BUTTONS (Optional Enhancement) ===== */
+  .button {
+    background-color: #007a4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.1s ease, background 0.3s;
+  }
+  
+  .button:active {
+    transform: scale(0.96);
+    background-color: #005f3a;
   }
   
   /* ===== FOOTER ===== */
