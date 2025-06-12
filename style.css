@@ -47,12 +47,9 @@
   
   .nav-links a:active {
     background: rgba(0, 122, 77, 0.2);
-  }
-  
-  .nav-links a:hover {
-    background: rgba(0, 122, 77, 0.1);
     color: #007a4d;
   }
+  
   
   /* ===== HERO SECTION ===== */
   .hero {
