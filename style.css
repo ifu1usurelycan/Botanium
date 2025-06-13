@@ -155,6 +155,12 @@
     cursor: pointer;
     padding: 0;
   }
+
+  .nav-links .dropdown:hover {
+    background: rgba(0, 122, 77, 0.1);
+    color: #007a4d;
+  }
+  
  
   
   .brand-inline {
