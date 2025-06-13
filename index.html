@@ -23,7 +23,9 @@
     </div>
   </nav>
 
-  <header class="hero with-slider" id="hero-header">
+  <header class="hero with-slider">
+    <div class="slider-bg" id="bg1"></div>
+    <div class="slider-bg" id="bg2"></div>
     <div class="hero-content">
       <h1>Smart Agriculture for a Sustainable Future</h1>
       <form class="search-form" action="products.html" method="get">
@@ -31,8 +33,8 @@
         <button type="submit">Search</button>
       </form>
     </div>
-    
   </header>
+  
   
 
   <section class="section alt with-image-block">
@@ -55,7 +57,6 @@
   </footer>
 
   <script>
-    const hero = document.getElementById("hero-header");
     const images = [
       "pic/26.jpeg",
       "pic/27.jpeg",
@@ -63,22 +64,36 @@
       "pic/30.jpeg",
       "pic/31.jpeg"
     ];
-    let currentIndex = 0;
   
-    function changeBackground() {
-      hero.style.opacity = 0; // fade out
-      setTimeout(() => {
-        currentIndex = (currentIndex + 1) % images.length;
-        hero.style.backgroundImage = `url('${images[currentIndex]}')`;
-        hero.style.opacity = 1; // fade in
-      }, 500); // wait for fade-out before switching
+    let currentIndex = 0;
+    let showingBg1 = true;
+  
+    const bg1 = document.getElementById("bg1");
+    const bg2 = document.getElementById("bg2");
+  
+    // Set initial image
+    bg1.style.backgroundImage = `url('${images[0]}')`;
+  
+    function crossfadeImages() {
+      currentIndex = (currentIndex + 1) % images.length;
+  
+      const nextImage = `url('${images[currentIndex]}')`;
+  
+      if (showingBg1) {
+        bg2.style.backgroundImage = nextImage;
+        bg2.style.opacity = 1;
+        bg1.style.opacity = 0;
+      } else {
+        bg1.style.backgroundImage = nextImage;
+        bg1.style.opacity = 1;
+        bg2.style.opacity = 0;
+      }
+  
+      showingBg1 = !showingBg1;
     }
-
-    // Initial load
-    hero.style.backgroundImage = `url('${images[0]}')`;
-
-    // Start automatic swap
-    setInterval(changeBackground, 5000);
+  
+    setInterval(crossfadeImages, 5000);
   </script>
+  
 </body>
 </html>
