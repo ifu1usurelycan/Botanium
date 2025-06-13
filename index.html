@@ -6,22 +6,6 @@
   <title>Botanium Agro-Tech (M) Sdn Bhd</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<script>
-  const hero = document.getElementById("hero-header");
-  const images = [
-    "26.jpeg",
-    "27.jpeg",
-    "29.jpeg",
-    "30.jpeg",
-    "31.jpeg"
-  ];
-  let i = 0;
-
-  setInterval(() => {
-    i = (i + 1) % images.length;
-    hero.style.backgroundImage = `url('${images[i]}')`;
-  }, 5000); // changes every 5 seconds
-</script>
 
 <body>
 
@@ -62,5 +46,23 @@
     <p><a href="https://vicharvests.gbs2u.com/" target="_blank">View Original Chinese Website</a></p>
   </footer>
 
+  <script>
+    const hero = document.getElementById("hero-header");
+    const images = [
+      "26.jpeg",
+      "27.jpeg",
+      "29.jpeg",
+      "30.jpeg",
+      "31.jpeg"
+    ];
+    let currentIndex = 0;
+  
+    function changeBackground() {
+      currentIndex = (currentIndex + 1) % images.length;
+      hero.style.backgroundImage = `url('${images[currentIndex]}')`;
+    }
+  
+    setInterval(changeBackground, 5000); // every 5 seconds
+  </script>
 </body>
 </html>
