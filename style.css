@@ -99,15 +99,10 @@
 
   /* Dropdown links */
   .dropdown-content a {
-    display: block;
-    padding: 12px 20px;
     color: #003d1f;
     font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
   }
+  
 
   /* Droplet hover effect */
   .dropdown-content a::before {
@@ -385,12 +380,6 @@
     color: #005c36;
   }
 
-  .section h2 {
-    font-size: 2.0rem;
-    margin-bottom: 1rem;
-    color: #005c36;
-  }
-  
   .section p {
     font-size: 1.1rem;
     color: #2a4735;
@@ -505,11 +494,13 @@
 
   .product-info h4 {
     margin-bottom: 0.5rem;
+    text-align: justify;
     color: #006633;
   }
 
   .product-info p {
     color: #2a4735;
+    text-align: justify;
   }
 
   
