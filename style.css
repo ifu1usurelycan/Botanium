@@ -259,10 +259,17 @@
     margin-bottom: 1rem;
     color: #005c36;
   }
+
+  .section h2 {
+    font-size: 2.0rem;
+    margin-bottom: 1rem;
+    color: #005c36;
+  }
   
   .section p {
     font-size: 1.1rem;
     color: #2a4735;
+    text-align: justify;
   }
   
   .alt {
