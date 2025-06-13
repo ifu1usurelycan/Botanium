@@ -31,19 +31,25 @@
   .logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem; /* space between logos and text */
+    gap: 0.75rem;
     font-size: 1.6rem;
     font-weight: 600;
     color: #007a4d;
     letter-spacing: 0.5px;
-    text-decoration: none;   
   }
   
   .logo-img {
-    height: 50px; /* ⬅️ Increase size */
+    height: 48px;
     width: auto;
     object-fit: contain;
   }
+  
+  .brand-name {
+    font-size: 1.6rem;
+    color: #007a4d;
+    white-space: nowrap;
+  }
+  
   
   
   
