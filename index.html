@@ -58,11 +58,19 @@
     let currentIndex = 0;
   
     function changeBackground() {
-      currentIndex = (currentIndex + 1) % images.length;
-      hero.style.backgroundImage = `url('${images[currentIndex]}')`;
+      hero.style.opacity = 0; // fade out
+      setTimeout(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        hero.style.backgroundImage = `url('${images[currentIndex]}')`;
+        hero.style.opacity = 1; // fade in
+      }, 500); // wait for fade-out before switching
     }
-  
-    setInterval(changeBackground, 5000); // every 5 seconds
+
+    // Initial load
+    hero.style.backgroundImage = `url('${images[0]}')`;
+
+    // Start automatic swap
+    setInterval(changeBackground, 5000);
   </script>
 </body>
 </html>
