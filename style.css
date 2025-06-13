@@ -20,7 +20,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75rem 2rem; 
+    padding: 1rem 2rem; 
+    flex-wrap: wrap;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
@@ -28,35 +29,56 @@
     box-shadow: 0 10px 30px rgba(0, 122, 77, 0.05);
   }
   
-  .logo {
+  /* Right-aligned logo */
+  .logo-container {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #007a4d;
-    letter-spacing: 0.5px;
+    gap: 0.5rem;
+    justify-content: flex-end;
   }
-  
-  /* Base style (optional for consistent spacing) */
-  .logo-img {
-    height: 36px;              /* Adjust size to match nav bar height */
-    width: auto;
-    object-fit: contain;
-    vertical-align: middle;    /* Aligns with text */
-  }
-  
-  
-  /* Make main logo bigger */
-  .large-logo {
+
+  .logo-img.large-logo {
     height: 40px;
   }
-  
-  /* Make second logo smaller */
-  .small-logo {
+
+  .logo-img.small-logo {
     height: 32px;
   }
-  
+
+  /* Dropdown */
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(14px);
+    border-radius: 12px;
+    padding: 0.5rem 0;
+    z-index: 999;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 10px 16px;
+    color: #003d1f;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgba(0, 122, 77, 0.1);
+  }
+
+    
   
   .brand-inline {
     font-weight: 600;
@@ -77,6 +99,13 @@
     pointer-events: none; /* optional: make it unclickable */
   }
   
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex: 1;
+  }
+
   .nav-links a {
     color: #003d1f;
     margin-left: 1.5rem;
