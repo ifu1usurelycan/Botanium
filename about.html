@@ -86,21 +86,29 @@
   <script>
     document.querySelectorAll('.image-slider').forEach(slider => {
       const images = slider.querySelectorAll('img');
+      // Wrap images inside a slider-track div
+      const track = document.createElement('div');
+      track.classList.add('slider-track');
+
+      images.forEach(img => track.appendChild(img));
+      slider.appendChild(track);
+
       let current = 0;
-  
-      function showNext() {
-        images[current].classList.remove('active');
+      const updateSlide = () => {
+        const width = slider.offsetWidth;
+        track.style.transform = `translateX(-${current * width}px)`;
+      };
+
+      setInterval(() => {
         current = (current + 1) % images.length;
-        images[current].classList.add('active');
-      }
-  
-      // Set the first image to visible
-      if (images.length > 0) {
-        images[0].classList.add('active');
-        setInterval(showNext, 4000); // every 4 seconds
-      }
+        updateSlide();
+      }, 4000);
+
+      window.addEventListener('resize', updateSlide); // responsive handling
+      updateSlide(); // initial slide setup
     });
   </script>
+
   
   
 </body>
