@@ -50,8 +50,14 @@
     white-space: nowrap;
   }
   
-  
-  
+  .brand-nav {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #007a4d;
+    margin-right: 1rem;
+    text-decoration: none;
+    pointer-events: none; /* optional: make it unclickable */
+  }
   
   .nav-links a {
     color: #003d1f;
