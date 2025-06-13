@@ -6,6 +6,23 @@
   <title>Botanium Agro-Tech (M) Sdn Bhd</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<script>
+  const hero = document.getElementById("hero-header");
+  const images = [
+    "26.jpeg",
+    "27.jpeg",
+    "29.jpeg",
+    "30.jpeg",
+    "31.jpeg"
+  ];
+  let i = 0;
+
+  setInterval(() => {
+    i = (i + 1) % images.length;
+    hero.style.backgroundImage = `url('${images[i]}')`;
+  }, 5000); // changes every 5 seconds
+</script>
+
 <body>
 
   <nav class="navbar">
@@ -19,12 +36,13 @@
     </div>
   </nav>
 
-  <header class="hero with-image">
+  <header class="hero with-slider" id="hero-header">
     <div class="hero-overlay">
       <h1>Smart Agriculture for a Sustainable Future</h1>
       <p>Since 2003, our company has been supplying agricultural and horticultural products such as fertilizers, pesticides, seeds, agricultural machinery, drip irrigation systems, and other netting or greenhouse equipment. Our wide range of customers includes small traditional vegetable farms as well as modern agricultural farms using new farming models.</p>
     </div>
   </header>
+  
 
   <section class="section alt with-image-block">
     <div class="text">

@@ -56,41 +56,25 @@
   }
   
   /* Hero background image */
-  .hero.with-image {
-    background: url("images/header-bg.jpg") center center / cover no-repeat;
-    position: relative;
-    color: white;
+  .hero.with-slider {
+    background: url("26.jpeg") center center / cover no-repeat;
     min-height: 80vh;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: background-image 1s ease-in-out;
   }
   
-  .hero.with-image .hero-overlay {
+  .hero-overlay {
     background: rgba(0, 0, 0, 0.4);
     padding: 2rem;
     border-radius: 12px;
     max-width: 900px;
-  }
-  
-  .hero.with-image h1 {
-    color: #ccffcc;
-  }
-  
-  .hero.with-image p {
     color: #f2fff2;
   }
   
-  /* Section with image */
-  .with-image-block {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    text-align: left;
-  }
   
   .with-image-block .text {
     flex: 1 1 400px;
