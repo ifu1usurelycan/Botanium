@@ -55,25 +55,54 @@
     color: #007a4d;
   }
   
-  /* ===== HERO SECTION ===== */
-  .hero {
-    background: linear-gradient(to right, #ccf5e1, #e9fff2);
-    padding: 6rem 2rem;
+  /* Hero background image */
+  .hero.with-image {
+    background: url("images/header-bg.jpg") center center / cover no-repeat;
+    position: relative;
+    color: white;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: #004d2d;
   }
   
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
+  .hero.with-image .hero-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 900px;
   }
   
-  .hero p {
-    font-size: 1.3rem;
-    max-width: 600px;
-    margin: 0 auto;
+  .hero.with-image h1 {
+    color: #ccffcc;
   }
+  
+  .hero.with-image p {
+    color: #f2fff2;
+  }
+  
+  /* Section with image */
+  .with-image-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .with-image-block .text {
+    flex: 1 1 400px;
+  }
+  
+  .with-image-block .image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 122, 77, 0.2);
+    flex: 1 1 300px;
+  }
+  
   
   /* ===== ABOUT BLOCKS ===== */
   .about-block {
