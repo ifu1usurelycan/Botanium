@@ -29,11 +29,21 @@
   }
   
   .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 1.6rem;
     font-weight: 600;
     color: #007a4d;
     letter-spacing: 0.5px;
   }
+  
+  .logo-img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+  }
+  
   
   .nav-links a {
     color: #003d1f;
