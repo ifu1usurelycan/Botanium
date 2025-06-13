@@ -38,11 +38,22 @@
     letter-spacing: 0.5px;
   }
   
+  /* Base style (optional for consistent spacing) */
   .logo-img {
-    height: 48px;
-    width: auto;
     object-fit: contain;
+    width: auto;
   }
+  
+  /* Make main logo bigger */
+  .large-logo {
+    height: 60px;
+  }
+  
+  /* Make second logo smaller */
+  .small-logo {
+    height: 36px;
+  }
+  
   
   .brand-inline {
     font-weight: 600;
