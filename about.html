@@ -32,9 +32,11 @@
   
     <div class="about-block">
         <div class="image-slider slide">
+          <div class="slider-track">
             <img src="pic/4.jpeg" alt="Farming Research">
             <img src="pic/6.jpeg" alt="Farming Research 2">
             <img src="pic/39.jpeg" alt="Farming Research 3">
+          </div>
         </div>
       <div>
         <h3>Innovative Farming Research</h3>
@@ -44,10 +46,13 @@
   
     <div class="about-block reverse">
         <div class="image-slider slide">
+          <div class="slider-track">
             <img src="pic/38.jpeg" alt="Greenhouse Systems">
             <img src="pic/37.jpeg" alt="Greenhouse Systems 2">
             <img src="pic/40.jpeg" alt="Greenhouse Systems 3">
+          </div>
         </div>
+      </div>
       
       <div>
         <h3>Greenhouse & Precision Systems</h3>
@@ -57,8 +62,10 @@
   
     <div class="about-block">
         <div class="image-slider slide">
+          <div class="slider-track">
             <img src="pic/34.jpg" alt="Botanium Team">
             <img src="pic/41.jpg" alt="Botanium Team 2">
+          </div>
         </div>
       <div>
         <h3>Expert Team</h3>
@@ -68,8 +75,10 @@
 
     <div class="about-block reverse">
         <div class="image-slider slide">
+          <div class="slider-track">
             <img src="pic/35.jpg" alt="Achievement">
             <img src="pic/36.jpg" alt="Achievement 2">
+          </div>
         </div>
       
       <div>
@@ -85,29 +94,24 @@
   </footer>
   <script>
     document.querySelectorAll('.image-slider.slide').forEach(slider => {
-      const images = slider.querySelectorAll('img');
-      
-      // Wrap images inside a slider-track div
-      const track = document.createElement('div');
-      track.classList.add('slider-track');
-  
-      images.forEach(img => track.appendChild(img));
-      slider.appendChild(track);
-  
-      let current = 0;
-      const updateSlide = () => {
-        const width = slider.offsetWidth;
-        track.style.transform = `translateX(-${current * width}px)`;
-      };
-  
-      setInterval(() => {
-        current = (current + 1) % images.length;
-        updateSlide();
-      }, 4000);
-  
-      window.addEventListener('resize', updateSlide); // responsive handling
-      updateSlide(); // initial slide setup
-    });
+    const track = slider.querySelector('.slider-track');
+    const images = track.querySelectorAll('img');
+    let current = 0;
+
+    const updateSlide = () => {
+      const width = slider.offsetWidth;
+      track.style.transform = `translateX(-${current * width}px)`;
+    };
+
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      updateSlide();
+    }, 4000);
+
+    window.addEventListener('resize', updateSlide);
+    updateSlide();
+  });
+
   </script>
   
   
