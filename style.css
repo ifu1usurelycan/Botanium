@@ -57,7 +57,7 @@
   
   /* Hero background image */
   .hero.with-slider {
-    background: url("26.jpeg") center center / cover no-repeat;
+    background: url("pic/26.jpeg") center center / cover no-repeat;
     min-height: 80vh;
     position: relative;
     display: flex;
