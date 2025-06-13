@@ -46,16 +46,17 @@
   
   .brand-inline {
     font-weight: 600;
+    font-size: 1.6rem;
     color: #007a4d;
     margin-left: 0.5rem;
-    margin-right: 1.8rem;
+    margin-right: 0.5rem;
     align-self: center;
   }
   
   
   .brand-nav {
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: #007a4d;
     margin-right: 1rem;
     text-decoration: none;
