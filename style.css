@@ -44,11 +44,14 @@
     object-fit: contain;
   }
   
-  .brand-name {
-    font-size: 1.6rem;
+  .brand-inline {
+    font-weight: 600;
     color: #007a4d;
-    white-space: nowrap;
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+    align-self: center;
   }
+  
   
   .brand-nav {
     font-weight: 700;
