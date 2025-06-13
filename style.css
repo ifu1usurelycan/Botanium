@@ -60,6 +60,15 @@
     position: relative;
   }
 
+  .dropbtn {
+    padding: 6px 10px;
+    color: #003d1f;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
   /* Hide the content by default */
   .dropdown-content {
     display: none;
@@ -67,13 +76,16 @@
     top: 100%;
     left: 0;
     background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(14px);
-    border-radius: 12px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 122, 77, 0.15);
+    min-width: 240px;
     padding: 0.5rem 0;
-    min-width: 200px;
-    box-shadow: 0 8px 16px rgba(0, 122, 77, 0.2);
     z-index: 999;
+    border: 1px solid rgba(0, 122, 77, 0.25);
   }
+  
 
   /* Reveal dropdown on hover */
   .dropdown:hover .dropdown-content {
@@ -81,18 +93,41 @@
   }
 
   /* Style links inside dropdown */
+  /* Dropdown links */
   .dropdown-content a {
     display: block;
-    padding: 10px 16px;
+    padding: 12px 20px;
     color: #003d1f;
+    font-weight: 500;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
   }
 
-  /* Hover effect */
+  /* Droplet hover effect */
+  .dropdown-content a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(0, 122, 77, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+    z-index: -1;
+  }
+
+  .dropdown-content a:hover::before {
+    width: 300px;
+    height: 300px;
+  }
+
   .dropdown-content a:hover {
-    background-color: rgba(0, 122, 77, 0.1);
     color: #007a4d;
+    font-weight: 600;
   }
 
     
