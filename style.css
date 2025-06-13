@@ -56,42 +56,28 @@
   }
   
   .hero.with-slider {
-    background: url("26.jpeg") center center / cover no-repeat;
-    min-height: 80vh;
+    background: url("pic/26.jpeg") center center / cover no-repeat;
+    min-height: 90vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .hero-overlay {
-    background: rgba(0, 0, 0, 0.55);
-    backdrop-filter: blur(4px);
-    padding: 4rem 2rem 6rem;
-    border-radius: 12px;
-    max-width: 900px;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 4rem;
+    transition: background-image 1s ease-in-out;
+    padding: 2rem;
+    color: white;
   }
   
   .hero-content {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    max-width: 900px;
+    padding: 1rem;
   }
   
   .hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #ccffcc;
-  }
-  
-  .hero-content p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    color: #f2fff2;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   }
   
   .search-form {
@@ -100,24 +86,23 @@
     align-items: center;
     gap: 0.5rem;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
   
   .search-form input[type="text"] {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.2rem;
     border-radius: 50px;
     border: none;
     outline: none;
     width: 280px;
-    max-width: 90%;
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
+    color: #004d2d;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   }
   
-  .search-form input[type="text"]:focus {
-    box-shadow: 0 6px 14px rgba(0, 122, 77, 0.25);
+  .search-form input[type="text"]::placeholder {
+    color: #666;
   }
   
   .search-form button {
@@ -136,6 +121,7 @@
     background-color: #008a55;
     transform: scale(1.05);
   }
+  
   
   
   
