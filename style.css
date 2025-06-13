@@ -66,12 +66,24 @@
     transition: background-image 1s ease-in-out;
     padding: 2rem;
     color: white;
+    overflow: hidden;
+  }
+  
+  .hero.with-slider::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* Adjust darkness here */
+    z-index: 1;
   }
   
   .hero-content {
     max-width: 900px;
     padding: 1rem;
+    z-index: 2;
+    position: relative;
   }
+  
   
   .hero-content h1 {
     font-size: 2.8rem;
