@@ -37,13 +37,16 @@
     font-size: 1.2rem;
     font-weight: 600;
     color: #007a4d;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px; 
+    flex: 1;
   }
   .logo-container {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     justify-content: flex-end;
+    flex: 1; /* allow it to expand */
+    max-width: 25%; /* optional: control width */
   }
 
   .logo-img.large-logo {
@@ -191,7 +194,7 @@
     display: flex;
     gap: 1.5rem;
     justify-content: center;
-    flex: 1;
+    flex: 2;
   }
 
   .nav-links a {
