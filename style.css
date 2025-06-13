@@ -99,10 +99,15 @@
 
   /* Dropdown links */
   .dropdown-content a {
+    display: block;
+    padding: 12px 20px;
     color: #003d1f;
     font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
   }
-  
 
   /* Droplet hover effect */
   .dropdown-content a::before {
