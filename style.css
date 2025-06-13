@@ -31,18 +31,20 @@
   .logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.75rem; /* space between logos and text */
     font-size: 1.6rem;
     font-weight: 600;
     color: #007a4d;
     letter-spacing: 0.5px;
+    text-decoration: none;   
   }
   
   .logo-img {
-    height: 32px;
+    height: 50px; /* ⬅️ Increase size */
     width: auto;
     object-fit: contain;
   }
+  
   
   
   .nav-links a {
