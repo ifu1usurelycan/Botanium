@@ -207,16 +207,14 @@
     transition: all 0.3s ease;
   }
   
-  .nav-links a.active {
-    background: rgba(0, 122, 77, 0.2);
+  .nav-links a:hover,
+  .nav-links a:active,
+  .nav-links a:focus {
+    background: rgba(0, 122, 77, 0.2); /* or match .active or .hover */
     color: #007a4d;
+    outline: none; /* removes blue border on Chrome/Safari */
   }
-  
-  .nav-links a:hover {
-    background: rgba(0, 122, 77, 0.1);
-    color: #007a4d;
-  }
-  
+
   .hero.with-slider {
     position: relative;
     height: 90vh;
