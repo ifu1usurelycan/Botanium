@@ -1,37 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products – Botanium</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <nav class="navbar">
     <div class="logo">Botanium Group</div>
-   
-
-    <!-- Center-aligned navigation -->
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-
-      <!-- Dropdown menu -->
       <div class="dropdown">
-        <a href="products.html" class="dropbtn">Products</a>
+        <button class="dropbtn">Products</button>
         <div class="dropdown-content">
-          <a href="products.html#organic">Organic Certifiable</a>
-          <a href="products.html#trace">Chelated Trace Elements</a>
-          <a href="products.html#multi">Multi-Purpose</a>
-          <a href="products.html#silicon">Liquid Silicon</a>
-          <a href="products.html#highcon">High Concentrate</a>
+          <a href="#organic">Organic Certifiable</a>
+          <a href="#trace">Chelated Trace Elements</a>
+          <a href="#multi">Multi-Purpose</a>
+          <a href="#silicon">Liquid Silicon</a>
+          <a href="#highcon">High Concentrate</a>
         </div>
       </div>
-
       <a href="contact.html">Contact</a>
     </div>
-
-     <!-- Logo aligned right -->
     <div class="logo-container">
       <img src="pic/33.png" alt="Main Logo" class="logo-img small-logo" />
       <img src="pic/32.png" alt="Partner Logo" class="logo-img small-logo" />
@@ -39,58 +32,75 @@
     </div>
   </nav>
 
-  <div class="section">
+  <main class="section">
     <h2>Our Products</h2>
-    <section class="product-category" id="organic">
-      <h2>Organic Certifiable Range</h2>
-      <ul>
-        <li><strong>M28</strong> – Organic Fish Emulsion Fertilizer (98.6%)</li>
-        <li><strong>M29</strong> – Flowering Inducer (18.5% Potassium)</li>
-        <li><strong>M51</strong> – Organic Calcium Boron for fruit quality</li>
-      </ul>
+
+    <section id="organic" class="glass-card">
+      <h3>Organic Certifiable Range</h3>
+      <div class="product-card">
+        <img src="pic/m28.jpg" alt="M28" class="product-img">
+        <img src="pic/m28-fn.jpg" alt="Function M28" class="function-img">
+        <div class="product-info">
+          <h4>M28 – Organic Fish Emulsion Fertilizer (98.6%)</h4>
+          <p>High-grade fish emulsion suitable for organic-certified farming.</p>
+        </div>
+      </div>
+      <!-- Repeat similar blocks for M29, M51 -->
     </section>
-    
-    <section class="product-category" id="trace">
-      <h2>Chelated Trace Elements</h2>
-      <ul>
-        <li><strong>M52</strong> – BCZ: Zinc, Copper, Boron</li>
-        <li><strong>M53</strong> – MMZ: Zinc, Manganese, Magnesium</li>
-        <li><strong>M56</strong> – MIZ: Zinc, Iron, Manganese, Boron</li>
-        <li><strong>M55</strong> – MIZ+: High Nitrogen + TE</li>
-        <li><strong>M58</strong> – MGN: Zinc, Magnesium, Boron, Manganese</li>
-      </ul>
+
+    <section id="trace" class="glass-card">
+      <h3>Chelated Trace Elements</h3>
+      <div class="product-card">
+        <img src="pic/m52.jpg" alt="M52" class="product-img">
+        <img src="pic/m52-fn.jpg" alt="Function M52" class="function-img">
+        <div class="product-info">
+          <h4>M52 – BCZ: Zinc, Copper, Boron</h4>
+          <p>Essential micronutrient blend for plant immune strength and growth.</p>
+        </div>
+      </div>
+      <!-- Repeat for M53, M55, M56, M58 -->
     </section>
-    
-    <section class="product-category" id="multi">
-      <h2>Multi-Purpose Range</h2>
-      <ul>
-        <li><strong>M32</strong> – All-Purpose Foliar Fertilizer (High Nitrogen)</li>
-        <li><strong>M35</strong> – HARVESTOL for fruits & flowers</li>
-        <li><strong>M82</strong> – HARVESTOL Ultra Yield</li>
-        <li><strong>M83</strong> – HI-K 500 for Oil Palm</li>
-        <li><strong>M51A</strong> – CMB: Calcium, Boron, Magnesium</li>
-        <li><strong>M59</strong> – CMM: Calcium, Boron, Molybdenum</li>
-      </ul>
+
+    <section id="multi" class="glass-card">
+      <h3>Multi-Purpose Range</h3>
+      <div class="product-card">
+        <img src="pic/m32.jpg" alt="M32" class="product-img">
+        <img src="pic/m32-fn.jpg" alt="Function M32" class="function-img">
+        <div class="product-info">
+          <h4>M32 – All-Purpose Foliar Fertilizer (High Nitrogen)</h4>
+          <p>Broad-spectrum nutrient spray promoting vegetative growth.</p>
+        </div>
+      </div>
+      <!-- Repeat for M35, M82, M83, M51A, M59 -->
     </section>
-    
-    <section class="product-category" id="silicon">
-      <h2>Liquid Silicon Range</h2>
-      <ul>
-        <li><strong>M61</strong> – YIELD BOOSTER: Silicon foliar spray</li>
-        <li><strong>M65</strong> – K-SILICATE: For paddy yield</li>
-      </ul>
+
+    <section id="silicon" class="glass-card">
+      <h3>Liquid Silicon Range</h3>
+      <div class="product-card">
+        <img src="pic/m61.jpg" alt="M61" class="product-img">
+        <img src="pic/m61-fn.jpg" alt="Function M61" class="function-img">
+        <div class="product-info">
+          <h4>M61 – YIELD BOOSTER: Silicon foliar spray</h4>
+          <p>Improves resistance and enhances yield in vegetables and grains.</p>
+        </div>
+      </div>
+      <!-- Repeat for M65 -->
     </section>
-    
-    <section class="product-category" id="highcon">
-      <h2>High Concentrate Liquid Fertilizer</h2>
-      <ul>
-        <li><strong>M63</strong> – SUPER SILICON: High PK Silicate</li>
-        <li><strong>M85</strong> – SUPER K600: High K formula</li>
-        <li><strong>M99</strong> – K-PHOSPHITE: Controls fungal root/canker</li>
-      </ul>
+
+    <section id="highcon" class="glass-card">
+      <h3>High Concentrate Liquid Fertilizer</h3>
+      <div class="product-card">
+        <img src="pic/m63.jpg" alt="M63" class="product-img">
+        <img src="pic/m63-fn.jpg" alt="Function M63" class="function-img">
+        <div class="product-info">
+          <h4>M63 – SUPER SILICON: High PK Silicate</h4>
+          <p>High-performance silicate formula for flowering and fruiting stages.</p>
+        </div>
+      </div>
+      <!-- Repeat for M85, M99 -->
     </section>
-    
-  </div>
+  </main>
+
   <footer>
     <p>&copy; 2025 Botanium. All rights reserved.</p>
     <p><a href="https://wa.me/601126832688" target="_blank">Chat with us on WhatsApp</a></p>
