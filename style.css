@@ -30,6 +30,15 @@
   }
   
   /* Right-aligned logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #007a4d;
+    letter-spacing: 0.5px;
+  }
   .logo-container {
     display: flex;
     align-items: center;
