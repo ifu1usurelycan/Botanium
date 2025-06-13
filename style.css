@@ -40,18 +40,21 @@
   
   /* Base style (optional for consistent spacing) */
   .logo-img {
-    object-fit: contain;
+    height: 36px;              /* Adjust size to match nav bar height */
     width: auto;
+    object-fit: contain;
+    vertical-align: middle;    /* Aligns with text */
   }
+  
   
   /* Make main logo bigger */
   .large-logo {
-    height: 42px;
+    height: 40px;
   }
   
   /* Make second logo smaller */
   .small-logo {
-    height: 40px;
+    height: 32px;
   }
   
   
