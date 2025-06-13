@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Products – Botanium</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <nav class="navbar">
-    <div class="logo">Botanium Group</div>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="products.html" class="active">Products</a>
+
+      <!-- Dropdown for Products -->
+      <div class="dropdown">
+        <a href="products.html" class="dropbtn active">Products</a>
+        <div class="dropdown-content">
+          <a href="#organic">Organic Certifiable</a>
+          <a href="#trace">Chelated Trace Elements</a>
+          <a href="#multi">Multi-Purpose</a>
+          <a href="#silicon">Liquid Silicon</a>
+          <a href="#highcon">High Concentrate</a>
+        </div>
+      </div>
+
       <a href="contact.html">Contact</a>
     </div>
 
-    <div class="dropdown">
-      <a href="products.html" class="dropbtn">Products</a>
-      <div class="dropdown-content">
-        <a href="#organic">Organic Certifiable</a>
-        <a href="#trace">Chelated Trace Elements</a>
-        <a href="#multi">Multi-Purpose</a>
-        <a href="#silicon">Liquid Silicon</a>
-        <a href="#highcon">High Concentrate</a>
-      </div>
+    <!-- Logo aligned right -->
+    <div class="logo">
+      <img src="pic/33.png" alt="Botanium Logo" class="logo-img large-logo" />
     </div>
-    
   </nav>
+
   <div class="section">
     <h2>Our Products</h2>
+
     <section class="product-category" id="organic">
       <h2>Organic Certifiable Range</h2>
       <ul>
@@ -37,7 +44,7 @@
         <li><strong>M51</strong> – Organic Calcium Boron for fruit quality</li>
       </ul>
     </section>
-    
+
     <section class="product-category" id="trace">
       <h2>Chelated Trace Elements</h2>
       <ul>
@@ -48,7 +55,7 @@
         <li><strong>M58</strong> – MGN: Zinc, Magnesium, Boron, Manganese</li>
       </ul>
     </section>
-    
+
     <section class="product-category" id="multi">
       <h2>Multi-Purpose Range</h2>
       <ul>
@@ -60,7 +67,7 @@
         <li><strong>M59</strong> – CMM: Calcium, Boron, Molybdenum</li>
       </ul>
     </section>
-    
+
     <section class="product-category" id="silicon">
       <h2>Liquid Silicon Range</h2>
       <ul>
@@ -68,7 +75,7 @@
         <li><strong>M65</strong> – K-SILICATE: For paddy yield</li>
       </ul>
     </section>
-    
+
     <section class="product-category" id="highcon">
       <h2>High Concentrate Liquid Fertilizer</h2>
       <ul>
@@ -77,8 +84,8 @@
         <li><strong>M99</strong> – K-PHOSPHITE: Controls fungal root/canker</li>
       </ul>
     </section>
-    
   </div>
+
   <footer>
     <p>&copy; 2025 Botanium. All rights reserved.</p>
     <p><a href="https://wa.me/601126832688" target="_blank">Chat with us on WhatsApp</a></p>
